@@ -26,6 +26,12 @@ body {
   border-radius: 10px;
   width: 200px;
   transition: 0.3s;
+  opacity: 0;
+  transform: translateY(40px);
+}</p>
+<p>.movie.show {
+  opacity: 1;
+  transform: translateY(0);
 }</p>
 <p>.movie:hover {
   transform: scale(1.1);
@@ -52,5 +58,15 @@ body {
 <img src="https://image.tmdb.org/t/p/w500/aoiU9L9V2V7KX1u4E6YH4kE4x8w.jpg">
 </div>
 <p></div></p>
+<script>
+window.onload = () => {
+  const movies = document.querySelectorAll('.movie');
+  movies.forEach((el, index) => {
+    setTimeout(() => {
+      el.classList.add('show');
+    }, index * 500);
+  });
+};
+</script>
 <p></body>
 </html>
