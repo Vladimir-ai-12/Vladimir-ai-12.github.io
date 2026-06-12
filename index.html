@@ -1,62 +1,71 @@
-<p>&lt;!DOCTYPE html&gt;
-<pre>&lt;html lang="ru"&gt;
-&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;title&gt;Мой сайт&lt;/title&gt;
-&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;style&gt;
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мой сайт</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"></p>
+<p><style>
 body {
   margin: 0;
-  font-family: &amp;lsquo;Inter&amp;rsquo;, sans-serif;
+  font-family: &lsquo;Inter&rsquo;, sans-serif;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
-}&lt;/p&gt;
-&lt;p&gt;.animate {
+}</p>
+<p>.animate {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease;
-}&lt;/p&gt;
-&lt;p&gt;.animate.show {
+}</p>
+<p>.animate.show {
   opacity: 1;
   transform: translateY(0);
-}&lt;/p&gt;
-&lt;p&gt;header {
+}</p>
+<p>header {
   text-align: center;
   padding: 100px 20px;
-}&lt;/p&gt;
-&lt;p&gt;.section {
+}</p>
+<p>.section {
   padding: 80px 20px;
   text-align: center;
+}</p>
+<p>.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #22c55e;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
 }
-&lt;/style&gt;
-&lt;/head&gt;&lt;/p&gt;
-&lt;p&gt;&lt;body&gt;&lt;/p&gt;
-&lt;header class="animate"&gt;
-&lt;h1&gt;Твой продукт или услуга&lt;/h1&gt;
-&lt;p&gt;Коротко объясни пользу&lt;/p&gt;
-&lt;/header&gt;
-&lt;section class="section animate"&gt;
-&lt;h2&gt;Обо мне&lt;/h2&gt;
-&lt;p&gt;Кто ты и чем полезен&lt;/p&gt;
-&lt;/section&gt;
-&lt;section class="section animate"&gt;
-&lt;h2&gt;Услуги&lt;/h2&gt;
-&lt;p&gt;Описание услуг&lt;/p&gt;
-&lt;/section&gt;
-&lt;section class="section animate"&gt;
-&lt;h2&gt;Контакты&lt;/h2&gt;
-&lt;p&gt;Telegram: @yourname&lt;/p&gt;
-&lt;/section&gt;
-&lt;script&gt;
-document.addEventListener("DOMContentLoaded", () =&gt; {
+</style>
+</head></p>
+<p><body></p>
+<header class="animate">
+<h1>Создаю современные сайты</h1>
+<p>Красиво и быстро</p>
+<a class="button" href="#contact">Связаться</a>
+</header>
+<section class="section animate">
+<h2>Обо мне</h2>
+<p>Я делаю сайты, которые выглядят современно и привлекают клиентов</p>
+</section>
+<section class="section animate">
+<h2>Услуги</h2>
+<p>Лендинг / сайт-визитка / редизайн</p>
+</section>
+<section class="section animate" id="contact">
+<h2>Контакты</h2>
+<p>Telegram: @yourname</p>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll('.animate');
-  elements.forEach((el, index) =&gt; {
-    setTimeout(() =&gt; {
+  elements.forEach((el, index) => {
+    setTimeout(() => {
       el.classList.add('show');
     }, index * 300);
   });
 });
-&lt;/script&gt;
-&lt;p&gt;&lt;/body&gt;
-&lt;/html&gt;</pre></p>
+</script>
+<p></body>
+</html>
